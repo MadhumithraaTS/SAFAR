@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f0f8ff;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #e8f0fe;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      font-style: italic;
+      color: #123d72;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #123d72;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #a8d0e6;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: border-color 0.3s, background-color 0.3s;
+      background-color: #f9f9f9;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="date"]:focus,
+    input[type="number"]:focus,
+    textarea:focus,
+    select:focus {
+      border-color: #0073e6;
+      background-color: #e6f3ff;
+    }
+
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: #ff6f61;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ff4b3a;
+      transform: scale(1.05);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      text-decoration: none;
+    }
+    .container{
+      margin-top: 7%;
+    }
+
+    body {
+
+      font-family: "Poppins", sans-serif;
+      background-color: white;
+      margin: 0;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .nav-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: white;
+      box-shadow: 1px 1px 2px rgb(15, 15, 68);
+      transition: top 0.3s;
+    }
+
+    .content {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 1.6rem 1rem;
+    }
+
+    .nav-bar .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .nav-bar .navigation {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+    }
+
+    .nav-bar .navigation .link a {
+      padding: 0.25rem;
+      font-weight: 800;
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #123d72;
+      border-top: 1px solid transparent;
+      transition: all 0.6s;
+    }
+
+    .nav-bar .navigation .link:hover a {
+      color: rgb(139, 65, 45);
+      border-top: 1px solid transparent;
+    }
+
+    .nav-bar .site-logo .logo-link {
+      padding: 0.5rem;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 22px;
+      text-transform: capitalize;
+      color: #123d72;
+      border-top: 1px solid transparent;
+    }
+
+    .nav-bar .site-logo {
+      padding: 0.5rem;
+    }
+
+    .site-banner {
+      background-color: #000;
+      padding: 4rem 0rem;
+      margin-top: 5%;
+    }
+
+    .site-banner .row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .site-banner .row p {
+      font-weight: 800;
+      background-image: url(bgw1\ \(2\).jpeg);
+      background-position: top center;
+      background-attachment: fixed;
+      -webkit-background-clip: text;
+      -webkit-text-stroke: #020b11;
+      -webkit-text-fill-color: transparent;
+      font-size: 150px;
+    }
+
+    .bottom {
+      width: 100%;
+      padding: 10px 15%;
+      background-color: #000;
+      color: aliceblue;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .bottom div {
+      text-align: center;
+    }
+
+    .newsletter {
+      flex-grow: 2;
+    }
+
+    .bottom h3 {
+      font-weight: 300;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+    }
+
+    .col-1 a {
+      display: block;
+      text-decoration: none;
+      margin-bottom: 10px;
+      color: aliceblue;
+    }
+
+    .email {
+      padding-top: 40%;
+    }
+
+    .call {
+      padding-top: 115px;
+    }
+
+    .email h1,
+    .call h1 {
+      font-weight: 300;
+      font-size: larger;
+    }
+
+    .email p,
+    .call p {
+      cursor: pointer;
+    }
+
+    form input {
+      width: 100%;
+      max-width: 400px;
+      height: 45px;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      outline: none;
+      border: none;
+    }
+
+    form button {
+      background: transparent;
+      border: 2px solid aliceblue;
+      color: aliceblue;
+      border-radius: 30px;
+      padding: 10px 30px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .social {
+      margin-top: 30px;
+    }
+
+    .social i {
+      font-size: 22px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <div class="content">
+      <div class="site-logo">
+        <a href="history.html" class="logo-link">SAFAR</a>
+      </div>
+      <ul class="navigation">
+        <li class="link"><a href="home_safar.html">HOME</a></li>
+        <li class="link"><a href="packages_safar.html">PACKAGES</a></li>
+        <li class="link"><a href="about us_safar.html">ABOUT</a></li>
+        <li class="link"><a href="gallery_safar.html">GALLERY</a></li>
+        <li class="link"><a href="blogs_safar.html">BLOG</a></li>
+        <li class="link"><a href="contact.html">CONTACT</a></li>
+        <li class="link"><a href="offers_safar.html">OFFERS</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h2><i>HOTEL GUEST REGISTRATION FORM</i></h2>
+    <form id="registrationForm" action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" required>
+
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" required>
+
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" required>
+
+      <label for="arrival">Arrival Date:</label>
+      <input type="date" id="arrival" name="arrival" required>
+
+      <label for="departure">Departure Date:</label>
+      <input type="date" id="departure" name="departure" required>
+
+      <label for="adults">Number of Adults:</label>
+      <input type="number" id="adults" name="adults" required>
+
+      <label for="kids">Number of Kids:</label>
+      <input type="number" id="kids" name="kids">
+
+      <label for="payment">Payment Method:</label>
+      <select id="payment" name="payment" required>
+        <option value="credit">Credit Card</option>
+        <option value="debit">Debit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="bank">Bank Transfer</option>
+      </select>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div class="site-banner">
+    <div class="content">
+      <div class="row">
+        <p>Safar</p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="col-1">
+      <h3>Useful Links</h3>
+      <a href="about us_safar.html">About</a>
+      <a href="jobtravel.html">Jobs</a>
+      <a href="test.html">Reviews</a>
+      <div class="call">
+        <h1>CALL US</h1>
+        <hr>
+        <br>
+        <p>+91 98765 *****</p>
+      </div>
+    </div>
+    <div class="newsletter">
+      <h3>NEWSLETTER</h3>
+      <form>
+        <input type="email" placeholder="Your Email Address">
+        <br>
+        <button type="submit">Subscribe Now</button>
+      </form>
+    </div>
+    <div class="head">
+      <h3>CONTACT</h3>
+      <p>123,XYZ Road,BSK 3 <br>Coimbatore,Tamilnadu,IN</p>
+      <div class="social">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="email">
+        <h1>EMAIL US</h1>
+        <hr>
+        <br>
+        <p>safaradventures@yahoo.com</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      if (!name.trim()) {
+        alert('Name is required.');
+        return;
+      }
+      const email = document.getElementById('email').value;
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      const address = document.getElementById('address').value;
+      if (!address.trim()) {
+        alert('Address is required.');
+        return;
+      }
+
+
+      const state = document.getElementById('state').value;
+      if (!state.trim()) {
+        alert('State is required.');
+        return;
+      }
+
+
+      const country = document.getElementById('country').value;
+      if (!country.trim()) {
+        alert('Country is required.');
+        return;
+      }
+
+      const destination = document.getElementById('destination').value;
+      if (!destination.trim()) {
+        alert('Destination is required.');
+        return;
+      }
+
+
+      const arrival = document.getElementById('arrival').value;
+      const departure = document.getElementById('departure').value;
+      if (new Date(arrival) >= new Date(departure)) {
+        alert('Departure date must be after the arrival date.');
+        return;
+      }
+
+      const adults = document.getElementById('adults').value;
+      if (adults <= 0) {
+        alert('Number of adults must be a positive number.');
+        return;
+      }
+
+      const kids = document.getElementById('kids').value;
+      if (kids < 0) {
+        alert('Number of kids cannot be negative.');
+        return;
+      }
+
+      const payment = document.getElementById('payment').value;
+      if (!payment) {
+        alert('Payment method is required.');
+        return;
+      }
+
+      alert('Form submitted successfully!');
+      document.getElementById('registrationForm').submit();
+    });
+  </script>
+</body>
+
+</html>

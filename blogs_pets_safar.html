@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling with Pets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 110px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        max-height: fit-content;
+        padding-bottom: 50px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #000;
+    }
+
+    ol,
+    ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    ol li,
+    ul li {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #000;
+    }
+
+    img {
+        max-width: 700px;
+        height: 500px;
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        transition: all 0.2s ease;
+
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+        background-color: white;
+        font-size: 62.5%;
+
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+        box-shadow: 1px 1px 2px rgb(15, 15, 68);
+        transition: top 0.3s;
+    }
+
+    .content {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 1.6rem 1rem;
+    }
+
+    .nav-bar .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .nav-bar .navigation {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+    }
+
+    .nav-bar .navigation .link a {
+        padding: 0.25rem;
+        font-weight: 800;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #123d72;
+        border-top: 1px solid transparent;
+        transition: all 0.6s;
+        margin-left: 35%;
+    }
+
+    .nav-bar .navigation .link:hover a {
+        color: rgb(139, 65, 45);
+        border-top: 1px solid transparent;
+    }
+
+    .nav-bar .site-logo .logo-link {
+        padding: 0.5rem;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #123d72;
+        border-top: 1px solid transparent;
+    }
+
+    .nav-bar .site-logo {
+        padding: 0.5rem;
+    }
+
+    .site-banner {
+        background-color: #000;
+        padding: 4rem 0rem;
+        margin-top: 5%;
+
+    }
+
+    .site-banner .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .site-banner .row p {
+        font-weight: 800;
+        background-image: url(bgw1\ \(2\).jpeg);
+        background-position: top center;
+        background-attachment: fixed;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: #020b11;
+        -webkit-text-fill-color: transparent;
+        font-size: 150px;
+    }
+
+    .bottom {
+        width: 100%;
+        padding: 10px 15%;
+        background-color: #000;
+        margin-top: 0px;
+        color: aliceblue;
+        display: flex;
+        font-size: 16px;
+    }
+
+    .bottom div {
+        text-align: center;
+    }
+
+    .newsletter {
+        flex-grow: 2;
+    }
+
+    .bottom h3 {
+        font-weight: 300;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+
+    .col-1 a {
+        display: block;
+        text-decoration: none;
+        margin-bottom: 10px;
+        color: aliceblue;
+        font-size: 16px;
+    }
+
+    .email {
+        padding-top: 40%;
+    }
+
+    .call {
+        padding-top: 115px;
+    }
+
+    .email h1,
+    .call h1 {
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    .email p,
+    .call p {
+        cursor: pointer;
+    }
+
+    form input {
+        width: 400px;
+        height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        outline: none;
+        border: none;
+    }
+
+    form button {
+        background: transparent;
+        border: 2px solid aliceblue;
+        color: aliceblue;
+        border-radius: 30px;
+        padding: 10px 30px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .social {
+        margin-top: 30px;
+    }
+
+    .social i {
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <nav class="nav-bar">
+        <div class="content">
+            <div class="site-logo">
+                <a href="history.html" class="logo-link">SAFAR</a>
+            </div>
+            <ul class="navigation">
+                <li class="link"><a href="home_safar.html">HOME</a></li>
+                <li class="link"><a href="packages_safar.html">PACKAGES</a></li>
+                <li class="link"><a href="about us_safar.html">ABOUT</a></li>
+                <li class="link"><a href="gallery_safar.html">GALLERY</a></li>
+                <li class="link"><a href="blogs_safar.html">BLOG</a></li>
+                <li class="link"><a href="contact.html">CONTACT</a></li>
+                <li class="link"><a href="offers_safar.html">OFFERS</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 style="margin-left: 2%;">Traveling with Pets</h1>
+        <img src="OIP (1).jpeg" alt="pets" style="width: 100%; height:400px; margin-left: 7%;">
+        <p>Traveling with your beloved pet can be a rewarding experience, but it requires careful planning and
+            preparation to ensure their safety and comfort. Whether you're embarking on a road
+            trip or flying to a new destination, here are essential tips for traveling with pets:</p>
+        <ul>
+            <li><strong>Visit the Veterinarian</strong> Before your trip, schedule a visit to the veterinarian for a
+                health check-up. Ensure your pet
+                is up-to-date on vaccinations and obtain a health certificate if required by your destination. Discuss
+                any specific concerns related to travel with your vet.
+            </li>
+            <li><strong>Choose Pet-Friendly Accommodations</strong> Research and book pet-friendly accommodations in
+                advance.
+                Many hotels, vacation rentals, and campgrounds welcome pets. Confirm their pet policies, including any
+                additional fees or restrictions.
+            </li>
+            <li><strong>Prepare a Comfortable Travel Carrier</strong> For air travel or road trips, invest in a sturdy
+                and well-ventilated pet carrier that
+                provides ample space for your pet to stand, turn around, and lie down comfortably. Familiarize your pet
+                with the carrier before the journey.
+            </li>
+            <li><strong>Pack Essentials for Your Pet</strong> Bring your pet's essentials, including food,
+                treats, bowls, medication, leash, collar with ID tags,grooming supplies, waste bags, and
+                a favorite toy or blanket.Carry enough supplies to last the entire trip.
+            </li>
+            <img src="Champagne Falls.jpeg" alt="pets" style="width: 50%; margin-left: 15%;">
+            <li><strong>Ensure Proper Identification
+                </strong> Ensure your pet wears a secure collar with an updated ID tag that includes your contact
+                information.
+                Consider microchipping your pet for added security in case they get lost during the journey.
+            </li>
+            <li><strong>Monitor Your Pet's Comfort</strong>Pay attention to your pet's behavior and comfort throughout
+                the journey.
+                Offer reassurance, provide familiar items, and stay calm to alleviate anxiety.</li>
+            <li><strong> Be Prepared for Emergencies</strong> Research veterinary clinics along your route and carry a
+                first aid kit for pets.
+                Have contact numbers for emergency veterinary services at your destination.</li>
+        </ul>
+        <p><strong>Conclusion:</strong>Traveling with pets requires thoughtful planning and consideration to ensure a
+            safe and enjoyable experience for both you and your furry companion.
+            By following these essential tips and preparing in advance, you can make traveling with your pet a memorable
+            and stress-free adventure.
+            Remember to prioritize your pet's well-being and comfort throughout the journey. <b>Bon voyage!</b></p>
+    </div>
+    <div class="site-banner">
+        <div class="content">
+            <div class="row">
+                <p>Safar</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="about us_safar.html">About</a>
+            <a href="jobtravel.html">Jobs</a>
+            <a href="test.html">Reviews</a>
+            <div class="call">
+                <h1 style="color: #ffffff;">CALL US</h1>
+                <hr>
+                <br>
+                <p style="color: #ffffff;">+91 98765 *****</p>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address">
+                <br>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+        <div class="head">
+            <h3>CONTACT</h3>
+            <p style="color: #ffffff;">123,XYZ Road,BSK 3 <br>Coimbatore,Tamilnadu,IN</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="email">
+                <h1 style="color: #ffffff;">EMAIL US</h1>
+                <hr>
+                <br>
+                <p style="color: #ffffff;">safaradventures@yahoo.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

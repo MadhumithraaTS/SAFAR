@@ -1,0 +1,398 @@
+<html>
+    <head>
+        <title> Our Blogs</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style_blogs.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    transition: all 0.2s ease;
+    
+}
+body{
+    font-family:"Nunito Sans", sans-serif; 
+    overflow-x: hidden;
+    background-color: white;
+    font-size: 62.5%;
+    
+}
+
+
+h1,
+h2,
+h3,
+h4{
+    font-family: "Roboto", sans-serif;
+}
+.nav-bar{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    width:100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 1px 1px 2px rgb(15, 15, 68);
+    transition: all 0.3s;
+}
+.content{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1.6rem 1rem;
+}
+.nav-bar .content{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap:2rem;
+}
+.nav-bar .navigation{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+.nav-bar .navigation .link a{
+    padding: 0.25rem;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #123d72;
+    border-top: 1px solid transparent;
+    transition: all 0.6s;
+}
+.nav-bar .navigation .link:hover a{
+    color: rgb(139, 65, 45);
+    border-top: 1px solid transparent;
+}
+.nav-bar .site-logo .logo-link{
+    padding: 0.5rem;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #123d72;
+    border-top: 1px solid transparent;
+}
+.nav-bar .site-logo{
+    padding: 0.5rem;
+}
+section{
+    padding: 8rem 8%;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    color: #123d72;
+}
+.blog .box-container{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.blog .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.blog .box-container .box{
+    box-shadow: 1px 18px 39.1px 6.9px rgba(224,241,255,0.34);
+}
+
+.blog .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+}
+.blog .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover ;
+}
+.blog .box-container .box .image h3{
+    background-color: white;
+    color: #443f3f;
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    padding: .5rem 1.5rem;
+    font-size: 1.3rem;
+    border-radius: 15px;
+}
+.blog .box-container .box .image h3 i{
+    color:rgb(8, 49, 85);
+}
+.blog .box-container .box .bcontent{
+    padding: 0.5rem;
+    background-color: #fff;
+}
+.blog .box-container .box .bcontent h3 {
+    font-size: 24px;
+}
+.blog .box-container .box .bcontent p{
+    font-size: 18px;
+    padding: 0.8rem 0;
+    line-height: 2;
+    color: #777;
+}
+.btn{
+    width: fit-content;
+    background-color: rgb(139, 65, 45);
+    padding: 0.3rem 1rem;
+    font-size: 16px;
+    position: relative;
+    right:-105px;
+    color:#fff;
+    border: 2px solid transparent;
+    border-left: 2px solid rgb(139, 65, 45);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    transition: all 1s;
+    text-transform: capitalize;
+}
+.btn:hover{
+    border: 2px solid rgb(139,65,45);
+    background-color: rgb(139,65,45);
+    padding-left:2rem ;
+
+}
+.site-banner{
+    background-color: #000;
+    padding: 4rem 0rem;
+    margin-top: 5%;
+
+}
+.site-banner .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.site-banner .row p{
+    font-weight: 800;
+    background-image: url(bgw1\ \(2\).jpeg);
+    background-position: top center;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: #020b11;
+    -webkit-text-fill-color: transparent;
+    font-size: 150px;
+}
+.bottom {
+    width: 100%;
+    height: 50%;
+    padding: 10px 15%;
+    background-color: #000;
+    margin-top: 0px;
+    color: aliceblue;
+    display: flex;
+    font-size: 16px;
+}
+.bottom div {
+    text-align: center;
+}
+.newsletter {
+    flex-grow: 2;
+}
+ .bottom h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+ }
+
+ .col-1 a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: aliceblue;
+ }
+.email{
+    padding-top: 40%;
+}
+.call{
+    padding-top: 115px;
+}
+.email h1,
+.call h1{
+    font-weight: 300;
+    font-size:larger;
+}
+.email p,
+.call p{
+    cursor: pointer;
+}
+ form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+ }
+ form button {
+    background: transparent;
+    border: 2px solid aliceblue;
+    color: aliceblue;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+ }
+.social {
+    margin-top: 30px;
+}
+.social i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+    </style>
+    <body>
+        <nav class="nav-bar">
+            <div class="content">
+                <div class="site-logo">
+                    <a href="history.html" class="logo-link">SAFAR</a>
+                </div>
+                <ul class="navigation">
+                    <li class="link"><a href="home_safar.html">HOME</a></li>
+                    <li class="link"><a href="packages_safar.html">PACKAGES</a></li>
+                    <li class="link"><a href="about us_safar.html">ABOUT</a></li>
+                    <li class="link"><a href="gallery_safar.html">GALLERY</a></li>
+                    <li class="link"><a href="#">BLOG</a></li>
+                    <li class="link"><a href="contact.html">CONTACT</a></li>
+                    <li class="link"><a href="offers_safar.html">OFFERS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="blog">
+            <h1 class="heading">our blogs</h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="Kerala-picture.jpeg">
+                        <h3><i class="fas fa-heart"></i>77</h3>
+                    </div>
+                    <div class="bcontent"></div>
+                    <h3 style="font-size: 20px;">Welcome to God's Own Country—Kerala!</h3>
+                    <p style="font-size: 15.5px;">This lush tropical paradise in southern India is known for its serene backwaters...</p>
+                    <a href="blogs_kerala_safar.html" class="btn">read more</a>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="winter.jpeg">
+                        <h3><i class="fas fa-heart"></i>84</h3>
+                    </div>
+                    <div class="bcontent"></div>
+                    <h3 style="font-size: 20px;">Discover the Best Winter Destinations</h3>
+                    <p style="font-size: 15.5px;">Winter is a magical time to explore India, with cooler temperatures and clear skies enhancing...</p>
+                    <a href="blogs_winter_safar.html" class="btn">read more</a>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="pet.jpeg">
+                        <h3><i class="fas fa-heart"></i>45</h3>
+                    </div>
+                    <div class="bcontent"></div>
+                    <h3 style="font-size: 20px;">Traveling with Pets</h3>
+                    <p style="font-size: 15.5px;">Traveling with your beloved pet can be a rewarding experience, but it requires careful..</p>
+                    <a href="blogs_pets_safar.html" class="btn">read more</a>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="hm.jpeg">
+                        <h3><i class="fas fa-heart"></i>23</h3>
+                    </div>
+                    <div class="bcontent"></div>
+                    <h3 style="font-size: 20px;">Top Honeymoon Destinations</h3>
+                    <p style="font-size: 15.5px;">Planning your dream honeymoon in India? From serene beaches to picturesque hill stations..</p>
+                    <a href="blogs_hm_safar.html" class="btn">read more</a>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="bul.jpeg">
+                        <h3><i class="fas fa-heart"></i>56</h3>
+                    </div>
+                    <div class="bcontent"></div>
+                    <h3 style="font-size: 20px;">Ultimate Bucket List Destinations</h3>
+                    <p style="font-size: 15.5px;">India, with its diverse landscapes, rich culture, and historical treasures, offers a plethora of...</p>
+                    <a href="blogs_bul_safar.html" class="btn">read more</a>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="tips.jpeg">
+                        <h3><i class="fas fa-heart"></i>98</h3>
+                    </div>
+                    <div class="bcontent"></div>
+                    <h3 style="font-size: 20px;">Wellness Tips for Travelers</h3>
+                    <p style="font-size: 15.5px;">Traveling can be exhilarating, but it can also be taxing on your body and mind. To ensure you..</p>
+                    <a href="blogs_tips_safar.html" class="btn">read more</a>
+                </div>
+            </div>
+        </section>
+        <div class="site-banner">
+            <div class="content">
+                <div class="row">
+                    <p>Safar</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="col-1">
+                <h3>Useful Links</h3>
+                <a href="about us_safar.html">About</a>
+                <a href="jobtravel.html">Jobs</a>
+                <a href="test.html">Reviews</a>
+                <div class="call">
+                    <h1>CALL US</h1>
+                    <hr>
+                    <br>
+                    <p>+91 98765 *****</p>
+                </div>
+             
+                
+            </div>
+            <div class="newsletter">
+                <h3>NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="Your Email Address">
+                    <br>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+            <div class="head">
+                <h3>CONTACT</h3>
+                <p>123,XYZ Road,BSK 3 <br>Coimbatore,Tamilnadu,IN</p>
+                <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="email">
+                    <h1>EMAIL US</h1>
+                    <hr>
+                    <br>
+                    <p>safaradventures@yahoo.com</p>
+                </div>
+            </div> 
+        </div>
+        
+    </body>
+</html>

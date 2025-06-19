@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 1px 1px 2px rgb(15, 15, 68);
+  transition: top 0.3s;
+}
+
+.content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.6rem 1rem;
+}
+
+.nav-bar .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav-bar .navigation {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.nav-bar .navigation .link a {
+  padding: 0.25rem;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #123d72;
+  border-top: 1px solid transparent;
+  transition: all 0.6s;
+}
+
+.nav-bar .navigation .link:hover a {
+  color: rgb(139, 65, 45);
+  border-top: 1px solid transparent;
+}
+
+.nav-bar .site-logo .logo-link {
+  padding: 0.5rem;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #123d72;
+  border-top: 1px solid transparent;
+}
+
+.nav-bar .site-logo {
+  padding: 0.5rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+.head h1 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  margin-top: 8%;
+}
+
+.head h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+
+.container {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.slide p {
+  text-align: center;
+  padding: 0 100px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.slide .quote-icon {
+  font-size: 30px;
+  color: #123d72;
+}
+
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.details .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
+
+.nav-btn {
+  border-radius: 50%;
+  transform: translateY(20px);
+}
+
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 2px;
+  size: 10px;
+  color: #123d72;
+}
+
+.move {
+  margin-bottom: 8%;
+}
+.site-banner{
+  background-color: #000;
+  padding: 4rem 0rem;
+  margin-top: 5%;
+
+}
+.site-banner .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.site-banner .row p{
+  font-weight: 800;
+  background-image: url(bgw1\ \(2\).jpeg);
+  background-position: top center;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: #020b11;
+  -webkit-text-fill-color: transparent;
+  font-size: 150px;
+}
+.bottom {
+  width: 100%;
+  padding: 10px 15%;
+  background-color: #000;
+  margin-top: 0px;
+  color: aliceblue;
+  display: flex;
+}
+.bottom div {
+  text-align: center;
+}
+.newsletter {
+  flex-grow: 2;
+}
+.bottom h3 {
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.col-1 a{
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+.email{
+  padding-top: 40%;
+}
+.call{
+  padding-top: 115px;
+}
+.email h1,
+.call h1{
+  
+  font-weight: 300;
+  font-size:larger;
+}
+.email p,
+.call p{
+  cursor: pointer;
+}
+form input {
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+form button {
+  background: transparent;
+  border: 2px solid aliceblue;
+  color: aliceblue;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.social {
+  margin-top: 30px;
+}
+.social i {
+  font-size: 22px;
+  margin: 10px;
+  cursor: pointer;
+
+}

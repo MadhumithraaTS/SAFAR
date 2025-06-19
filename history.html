@@ -1,0 +1,342 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>History</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Roboto", sans-serif;
+  }
+
+  header {
+    margin-top: 5.5%;
+    background-image: url(travel-hd-pictures.jpg);
+    opacity: 0.9;
+    height: 400px;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 50%;
+
+  }
+
+
+
+  p {
+    font-size: 16;
+    font-family: "Poppins", sans-serif;
+  }
+
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    height: 90%;
+  }
+
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+  }
+
+  body {
+
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    margin: 0;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgb(15, 15, 68);
+    transition: top 0.3s;
+  }
+
+  .content {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1.6rem 1rem;
+  }
+
+  .nav-bar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .nav-bar .navigation {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+  }
+
+  .nav-bar .navigation .link a {
+    padding: 0.25rem;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #123d72;
+    border-top: 1px solid transparent;
+    transition: all 0.6s;
+  }
+
+  .nav-bar .navigation .link:hover a {
+    color: rgb(139, 65, 45);
+    border-top: 1px solid transparent;
+  }
+
+  .nav-bar .site-logo .logo-link {
+    padding: 0.5rem;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #123d72;
+    border-top: 1px solid transparent;
+  }
+
+  .nav-bar .site-logo {
+    padding: 0.5rem;
+  }
+
+  .site-banner {
+    background-color: #000;
+    padding: 4rem 0rem;
+    margin-top: 5%;
+  }
+
+  .site-banner .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .site-banner .row p {
+    font-weight: 800;
+    background-image: url(bgw1\ \(2\).jpeg);
+    background-position: top center;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: #020b11;
+    -webkit-text-fill-color: transparent;
+    font-size: 150px;
+  }
+
+  .bottom {
+    width: 100%;
+    padding: 10px 15%;
+    background-color: #000;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .bottom div {
+    text-align: center;
+  }
+
+  .newsletter {
+    flex-grow: 2;
+  }
+
+  .bottom h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+
+  .col-1 a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: aliceblue;
+  }
+
+  .email {
+    padding-top: 40%;
+  }
+
+  .call {
+    padding-top: 115px;
+  }
+
+  .email h1,
+  .call h1 {
+    font-weight: 300;
+    font-size: larger;
+  }
+
+  .email p,
+  .call p {
+    cursor: pointer;
+  }
+
+  form input {
+    width: 100%;
+    max-width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+  }
+
+  form button {
+    background: transparent;
+    border: 2px solid aliceblue;
+    color: aliceblue;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .social {
+    margin-top: 30px;
+  }
+
+  .social i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+  }
+</style>
+
+
+<body>
+  <nav class="nav-bar">
+    <div class="content">
+      <div class="site-logo">
+        <a href="history.html" class="logo-link">SAFAR</a>
+      </div>
+      <ul class="navigation">
+        <li class="link"><a href="home_safar.html">HOME</a></li>
+        <li class="link"><a href="packages_safar.html">PACKAGES</a></li>
+        <li class="link"><a href="about us_safar.html">ABOUT</a></li>
+        <li class="link"><a href="gallery_safar.html">GALLERY</a></li>
+        <li class="link"><a href="blogs_safar.html">BLOG</a></li>
+        <li class="link"><a href="contact.html">CONTACT</a></li>
+        <li class="link"><a href="offers_safar.html">OFFERS</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <header>
+    <h1 style="margin-top: 75px;opacity: 1;text-align: center;
+        font-size: 70px;
+        margin-left: 320;
+        margin-right: 320;
+        color: #123d72;
+        
+        ">HISTORY</h1>
+  </header>
+
+  <section>
+    <div style="float: left;
+    width: 30%;
+    height: 90%;
+    background-image: url(https://i.pinimg.com/564x/cb/31/c1/cb31c1829d7fb5fe03707d5a7bc60523.jpg);
+    padding: 20px;
+    margin-top: 20px;
+">
+
+    </div>
+
+    <article>
+      <p style="font-size: 18;">Global tourism had reached its zenith over the past year ($8.8 trillion) and India is among its key players. As
+        Indians are assuming a more pronounced sense of tourism today, international destinations have begun to gain
+        more traction, anticipating around 50 million outbound tourists by 2020 from India alone.</p>
+      <p style="font-size: 18;">Citing this trend and banking on its vast opportunity, we(Mayuka Sri , Madhumithraa , Reenu and Vrithika)
+        incepted Safar in 2024. The company is dedicated to gratifying leisure trips and corporate recreation, be it
+        MICE events, abroad trips, award functions, incentive trips or international voyages.</p>
+      <p style="font-size: 18;">As a well recognized brand in its field, the company ensures to offer never-before like packages to customers
+        resulting from its enriched tie-ups with various travel companies, cruise lines, airlines and tour-buffs around
+        the globe. Offering destination slabs ranging from Rs.2000-200,000, Safar destination packages further club into
+        exclusives like family/kids/elderly-friendly, couples, bachelors, night-life & shopping, education trips and
+        others. Moreover, right from availing visa/passport services to international currency exchanges and sim card
+        provisions with round-the-clock travel assistance and more, customers are pampered to experience every minute of
+        their trip with relaxation and ease.</p>
+    </article>
+  </section>
+  <div class="site-banner">
+    <div class="content">
+      <div class="row">
+        <p>Safar</p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="col-1">
+      <h3>Useful Links</h3>
+      <a href="about us_safar.html">About</a>
+      <a href="jobtravel.html">Jobs</a>
+      <a href="test.html">Reviews</a>
+      <div class="call">
+        <h1>CALL US</h1>
+        <hr>
+        <br>
+        <p>+91 98765 *****</p>
+      </div>
+    </div>
+    <div class="newsletter">
+      <h3>NEWSLETTER</h3>
+      <form>
+        <input type="email" placeholder="Your Email Address">
+        <br>
+        <button type="submit">Subscribe Now</button>
+      </form>
+    </div>
+    <div class="head">
+      <h3>CONTACT</h3>
+      <p>123,XYZ Road,BSK 3 <br>Coimbatore,Tamilnadu,IN</p>
+      <div class="social">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="email">
+        <h1>EMAIL US</h1>
+        <hr>
+        <br>
+        <p>safaradventures@yahoo.com</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

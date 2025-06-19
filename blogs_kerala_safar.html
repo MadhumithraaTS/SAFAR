@@ -1,0 +1,370 @@
+<html>
+
+<head>
+    <title>Welcome to God's Own Country—Kerala!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style_blogs1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+</head>
+<style>
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 110px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        max-height: fit-content;
+        padding-bottom: 50px;
+    }
+
+    h1 {
+        color: #123d72;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #000;
+    }
+
+    ol,
+    ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    ol li,
+    ul li {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #000;
+    }
+
+    img {
+        max-width: 700px;
+        height: 500px;
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        transition: all 0.2s ease;
+        font-family: "Poppins", sans-serif;
+
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+        background-color: white;
+        font-size: 62.5%;
+
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+        box-shadow: 1px 1px 2px rgb(15, 15, 68);
+    }
+
+    .content {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 1.6rem 1rem;
+    }
+
+    .nav-bar .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .nav-bar .navigation {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+    }
+
+    .nav-bar .navigation .link a {
+        padding: 0.25rem;
+        font-weight: 800;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #123d72;
+        border-top: 1px solid transparent;
+        transition: all 0.6s;
+    }
+
+    .nav-bar .navigation .link:hover a {
+        color: rgb(139, 65, 45);
+        border-top: 1px solid transparent;
+    }
+
+    .nav-bar .site-logo .logo-link {
+        padding: 0.5rem;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #123d72;
+        border-top: 1px solid transparent;
+    }
+
+    .nav-bar .site-logo {
+        padding: 0.5rem;
+    }
+
+    .site-banner {
+        background-color: #000;
+        padding: 4rem 0rem;
+        margin-top: 5%;
+
+    }
+
+    .site-banner .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .site-banner .row p {
+        font-weight: 800;
+        background-image: url(bgw1\ \(2\).jpeg);
+        background-position: top center;
+        background-attachment: fixed;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: #020b11;
+        -webkit-text-fill-color: transparent;
+        font-size: 150px;
+    }
+
+    .bottom {
+        width: 100%;
+        height: 50%;
+        padding: 10px 15%;
+        background-color: #000;
+        margin-top: 0px;
+        color: aliceblue;
+        display: flex;
+        font-size: 16px;
+    }
+
+    .bottom div {
+        text-align: center;
+    }
+
+    .newsletter {
+        flex-grow: 2;
+    }
+
+    .bottom h3 {
+        font-weight: 300;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+
+    .col-1 a {
+        display: block;
+        text-decoration: none;
+        margin-bottom: 10px;
+        color: aliceblue;
+    }
+
+    .email {
+        padding-top: 40%;
+    }
+
+    .call {
+        padding-top: 115px;
+    }
+
+    .email h1,
+    .call h1 {
+        font-weight: 300;
+        font-size: larger;
+    }
+
+    .email p,
+    .call p {
+        cursor: pointer;
+    }
+
+    form input {
+        width: 400px;
+        height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        outline: none;
+        border: none;
+    }
+
+    form button {
+        background: transparent;
+        border: 2px solid aliceblue;
+        color: aliceblue;
+        border-radius: 30px;
+        padding: 10px 30px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .social {
+        margin-top: 30px;
+    }
+
+    .social i {
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <nav class="nav-bar">
+        <div class="content">
+            <div class="site-logo">
+                <a href="history.html" class="logo-link">SAFAR</a>
+            </div>
+            <ul class="navigation">
+                <li class="link"><a href="home_safar.html">HOME</a></li>
+                <li class="link"><a href="packages_safar.html">PACKAGES</a></li>
+                <li class="link"><a href="about us_safar.html">ABOUT</a></li>
+                <li class="link"><a href="gallery_safar.html">GALLERY</a></li>
+                <li class="link"><a href="blogs_safar.html">BLOG</a></li>
+                <li class="link"><a href="contact.html">CONTACT</a></li>
+                <li class="link"><a href="offers_safar.html">OFFERS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Kerala Travel Tips</h1>
+        <img src="The Bus and Us.jpeg" alt="Kerala Backwaters"
+            style="width: 100%; height:400px; margin-left: 7%; padding-bottom: 20px;">
+        <p>Welcome to God's Own Country—Kerala! This lush tropical paradise in southern India is known for its serene
+            backwaters, beautiful beaches, vibrant culture, and delicious cuisine. To ensure you have an unforgettable
+            and smooth-sailing journey, here are some essential travel tips:</p>
+        <ol>
+            <li><strong>Best Time to Visit:</strong> Kerala enjoys a tropical climate, making it a year-round
+                destination. The peak tourist season is from September to March when the weather is pleasantly cool and
+                ideal for exploring. Monsoon season (June to August) offers lush green landscapes but heavy rainfall may
+                disrupt outdoor activities.</li>
+            <li><strong>Packing Essentials:</strong> Pack light cotton clothing, sunscreen, mosquito repellent, a hat,
+                and comfortable footwear for sightseeing. If visiting during monsoon, carry a raincoat or umbrella.
+                Respectful attire is appreciated when visiting religious sites—long pants or skirts and covered
+                shoulders for both men and women.</li>
+            <li><strong>Exploring Backwaters:</strong> A visit to Kerala is incomplete without experiencing its
+                enchanting backwaters. Opt for a houseboat cruise through Alleppey or Kumarakom to witness picturesque
+                landscapes, local life, and serene waterscapes. Book your houseboat in advance, especially during peak
+                season.</li>
+            <li><strong>Beach Bliss:</strong> Kerala boasts stunning beaches along its coastline. Visit Kovalam,
+                Varkala, or Marari Beach for sunbathing, swimming, and indulging in fresh seafood. Be cautious of strong
+                currents, especially during the monsoon season.</li>
+            <li><strong>Wildlife Encounters:</strong> Explore Kerala's rich biodiversity by visiting wildlife
+                sanctuaries like Periyar and Wayanad. Take a guided safari to spot elephants, tigers, and exotic bird
+                species in their natural habitat.</li>
+            <img src="As7-o1aL.jpeg" alt="Kerala Backwaters" style="width: 60%; margin-left: 15%;">
+            <li><strong>Ayurvedic Rejuvenation:</strong> Treat yourself to a rejuvenating Ayurvedic massage or therapy.
+                Kerala is renowned for its traditional Ayurvedic treatments using herbal oils and techniques that
+                promote relaxation and wellness.</li>
+            <li><strong>Cultural Experiences:</strong> Immerse yourself in Kerala's vibrant culture by attending a
+                Kathakali dance performance or exploring traditional arts and crafts. Visit local markets like Jew Town
+                in Kochi or spice markets in Thekkady to shop for souvenirs.</li>
+            <li><strong>Culinary Delights:</strong> Indulge in Kerala's delectable cuisine featuring coconut-infused
+                dishes, seafood specialties, and traditional snacks like appam with stew. Don't miss trying a
+                traditional Sadhya—a lavish vegetarian feast served on banana leaves.</li>
+            <li><strong>Transportation Tips:</strong> Use local transportation like auto-rickshaws or state-run buses
+                for short distances. Hire a taxi or rent a car for longer journeys. Consider renting a scooter or
+                bicycle for exploring coastal towns at your own pace.</li>
+            <li><strong>Respect Local Customs:</strong> Respect local customs and traditions. Remove footwear before
+                entering temples and religious sites. Seek permission before photographing locals, especially in rural
+                areas.</li>
+        </ol>
+        <p>Kerala offers a perfect blend of nature, culture, and tranquility—a haven for every traveler. With these
+            travel tips, you're well-equipped to embark on an enriching journey through Kerala's captivating landscapes
+            and immerse yourself in its rich heritage.<b> Get ready for an unforgettable adventure in God's Own Country!</b>
+        </p>
+
+        <p style="text-align: center;">Explore Kerala's enchanting backwaters!!!
+
+    </div>
+    <div class="site-banner">
+        <div class="content">
+            <div class="row">
+                <p>Safar</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="about us_safar.html">About</a>
+            <a href="jobtravel.html">Jobs</a>
+            <a href="test.html">Reviews</a>
+            <div class="call">
+                <h1 style="color: #ffffff;">CALL US</h1>
+                <hr>
+                <br>
+                <p style="color: #ffffff;">+91 98765 *****</p>
+            </div>
+
+
+        </div>
+        <div class="newsletter">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address">
+                <br>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+        <div class="head">
+            <h3>CONTACT</h3>
+            <p style="color: #ffffff;">123,XYZ Road,BSK 3 <br>Coimbatore,Tamilnadu,IN</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="email">
+                <h1 style="color: #ffffff;">EMAIL US</h1>
+                <hr>
+                <br>
+                <p style="color: #ffffff;">safaradventures@yahoo.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

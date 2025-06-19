@@ -1,0 +1,176 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Openings</title>
+  <link rel="stylesheet" href="jobtravel.css" />
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <div class="content">
+      <div class="site-logo">
+        <a href="history.html" class="logo-link">SAFAR</a>
+      </div>
+      <ul class="navigation">
+        <li class="link"><a href="home_safar.html">HOME</a></li>
+        <li class="link"><a href="packages_safar.html">PACKAGES</a></li>
+        <li class="link"><a href="about us_safar.html">ABOUT</a></li>
+        <li class="link"><a href="gallery_safar.html">GALLERY</a></li>
+        <li class="link"><a href="blogs_safar.html">BLOG</a></li>
+        <li class="link"><a href="contact.html">CONTACT</a></li>
+        <li class="link"><a href="offers_safar.html">OFFERS</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+    <br><br>
+    <div style="background: #123d72;width:100%;height: 45%;">
+      <p style="text-align: center;font-size:100;color: white;position: absolute;margin-top: 8.5%;margin-left: 32%;">
+        CAREERS</p>
+    </div>
+    <div class="split left">
+
+      <div class="jobt">
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <u>
+          <h1>
+            <p style="margin-left: 40;">JOB OPENING</p>
+          </h1>
+        </u>
+        <ul style="list-style-type:none;font-size:25;margin-left: 30;">
+          <li>Senior Travel Consultant</li>
+          <li>Customer Care Professional</li>
+          <li>Accountant</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="split right">
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <form>
+      <div class="container">
+        <h1 style="text-align: center;">APPLY FOR JOB</h1>
+        <hr style="width:70%;color: lightblue;">
+        <br>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="*Name" name="name" id="name" required>
+        <br>
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="*Enter Email" name="email" id="email" required>
+        <br>
+        <label for="phone"><b>Phone number</b></label>
+        <input type="tel" id="phone" name="phone" placeholder="+91" required><br><br>
+        <label for="position" placeholder="*Position applying for" name="position" id="'position" required><b>Position
+            applying for</b></label>
+        <select name="position" id="position" required>
+          <option value="STC">Position applying for</option>
+          <option value="STC">Senior Travel Consultant</option>
+          <option value="CCP">Customer Care Professional</option>
+          <option value="Acc">Accountant</option>
+        </select>
+        <br>
+        <label for="exp" id="exp" name="exp"><b>Years of experience</b></label>
+        <input type="number" max="10" min="1" required>
+        <br>
+        <label for="upload"><b>Upload your CV</b></label>
+        <input type="file" id="upload" name="upload" required>
+        <br>
+        <button class="button" style="text-align: center;" onclick="myFunc()"><span>SUBMIT</span></button>
+        <script>
+          function myFunction() {
+            const name = document.getElementById('name').value;
+            if (!name.trim()) {
+              alert('Name is required.');
+              return;
+            }
+            const email = document.getElementById('email').value;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+              alert('Please enter a valid email address.');
+              return;
+            }
+            const exp = document.getElementById('exp').value;
+            if (exp <= 0) {
+              alert('Number of years of experience must be a positive number.');
+              return;
+            }
+          }
+            function myFunc(){
+              window.alert('Your resume has been sent!');
+
+            }
+            
+
+        </script>
+      </div>
+    </form>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="site-banner">
+    <div class="content">
+      <div class="row">
+        <p>Safar</p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="col-1">
+      <h3>Useful Links</h3>
+      <a href="about us_safar.html">About</a>
+      <a href="#">Jobs</a>
+      <a href="test.html">Reviews</a>
+      <div class="call">
+        <h1>CALL US</h1>
+        <hr>
+        <br>
+        <p>+91 98765 *****</p>
+      </div>
+
+
+    </div>
+    <div class="newsletter">
+      <h3>NEWSLETTER</h3>
+      <form>
+        <input type="email" placeholder="Your Email Address">
+        <br>
+        <button type="submit">Subscribe Now</button>
+      </form>
+    </div>
+    <div class="head">
+      <h3>CONTACT</h3>
+      <p>123,XYZ Road,BSK 3 <br>Coimbatore,Tamilnadu,IN</p>
+      <div class="social">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="email">
+        <h1>EMAIL US</h1>
+        <hr>
+        <br>
+        <p>safaradventures@yahoo.com</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

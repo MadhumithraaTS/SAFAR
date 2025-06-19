@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content=""width=device width,initial-scale="1.0">
+        <title>Photo Gallery</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="style_gallery.css">
+         
+    </head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+.nav-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    width:100%;
+    z-index: 1000;
+    background-color:white;
+    box-shadow: 1px 1px 2px rgb(15, 15, 68);
+    transition: top 0.3s;
+}
+.content{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1.6rem 1rem;
+}
+.nav-bar .content{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap:2rem;
+}
+.nav-bar .navigation{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+.nav-bar .navigation .link a{
+    padding: 0.25rem;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #123d72;
+    border-top: 1px solid transparent;
+    transition: all 0.6s;
+}
+.nav-bar .navigation .link:hover a{
+    color: rgb(139, 65, 45);
+    border-top: 1px solid transparent;
+}
+.nav-bar .site-logo .logo-link{
+    padding: 0.5rem;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #123d72;
+    border-top: 1px solid transparent;
+}
+.nav-bar .site-logo{
+    padding: 0.5rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+    background-color: white;
+}
+
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.container .heading h3{
+    margin-top: 14%;
+    font-size: 3em;
+    font-weight:bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span{
+    margin-top: 14%;
+    font-weight: 100;
+    font-family:'Gill Sans', Gill Sans MT ,' Calibri', 'Trebuchet MS', sans-serif, ;
+}
+
+.container .box{
+    margin-top: 5%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.container .btn{
+    margin: 40px 0 70px 0;
+    background-color: #222;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+
+.container .btn a{
+    color: aliceblue;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.dream img{
+    box-shadow: 0px 15px solid #222;
+}
+
+@media only screen and (max-width: 769px){
+    .container .box{
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    .container .box .dream{
+        width: 100%;
+    }
+}
+
+.site-banner{
+    background-color: #000;
+    padding: 4rem 0rem;
+    margin-top: 5%;
+
+}
+.site-banner .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.site-banner .row p{
+    font-weight: 800;
+    background-image: url(bgw1\ \(2\).jpeg);
+    background-position: top center;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: #020b11;
+    -webkit-text-fill-color: transparent;
+    font-size: 150px;
+}
+.bottom {
+    width: 100%;
+    padding: 10px 15%;
+    background-color: #000;
+    margin-top: 0px;
+    color: aliceblue;
+    display: flex;
+}
+.bottom div {
+    text-align: center;
+}
+.newsletter {
+    flex-grow: 2;
+}
+ .bottom h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+ }
+
+ .col-1 a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: aliceblue;
+ }
+.email{
+    padding-top: 40%;
+}
+.call{
+    padding-top: 115px;
+}
+.email h1,
+.call h1{
+    
+    font-weight: 300;
+    font-size:larger;
+}
+.email p,
+.call p{
+    cursor: pointer;
+}
+ form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+ }
+ form button {
+    background: transparent;
+    border: 2px solid aliceblue;
+    color: aliceblue;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+ }
+.social {
+    margin-top: 30px;
+}
+.social i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+    </style>
+    <body>
+        <nav class="nav-bar">
+            <div class="content">
+                <div class="site-logo">
+                    <a href="history.html" class="logo-link">SAFAR</a>
+                </div>
+                <ul class="navigation">
+                    <li class="link"><a href="home_safar.html">HOME</a></li>
+                    <li class="link"><a href="packages_safar.html">PACKAGES</a></li>
+                    <li class="link"><a href="about us_safar.html">ABOUT</a></li>
+                    <li class="link"><a href="#">GALLERY</a></li>
+                    <li class="link"><a href="blogs_safar.html">BLOG</a></li>
+                    <li class="link"><a href="contact.html">CONTACT</a></li>
+                    <li class="link"><a href="offers_safar.html">OFFERS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="heading">
+                <h3>Photo<span>Gallery</span></h3>
+            </div>
+            <div class="box">
+
+                <div class="dream">
+                    <img src="g-2.jpg">
+                    <img src="g-7.jpeg">
+                    <img src="g-3.jpg">
+                    <img src="g-4">
+                    <img src="g-5.jpeg">
+                    <img src="g-16.jpg">
+                    <img src="g-19.jpeg">
+                    <img src="g-22.jpg">
+
+                </div>
+
+                <div class="dream">
+                    <img src="g-23.jpg">
+                    <img src="g-8.jpeg">
+                    <img src="g-9.jpeg">
+                    <img src="g-10.jpeg">
+                    <img src="g-17.jpg">
+                    <img src="g-20.jpg">
+                    <img src="g-1.jpg">
+
+                </div>
+
+                <div class="dream">
+                    <img src="g-24.jpg">
+                    <img src="g-12.jpeg">
+                    <img src="g-13">
+                    <img src="g-14.jpeg">
+                    <img src="g-15.jpeg">
+                    <img src="g-18.jpg">
+                    <img src="g-21.jpeg">
+                    <img src="g-11.jpeg">
+
+                </div>
+
+            
+            </div>
+            <div class="btn">
+                <a href="#">Scroll to Top</a>
+            </div>
+        </div>
+        <div class="site-banner">
+            <div class="content">
+                <div class="row">
+                    <p>Safar</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="col-1">
+                <h3>Useful Links</h3>
+                <a href="about us_safar.html">About</a>
+                <a href="jobtravel.html">Jobs</a>
+                <a href="test.html">Reviews</a>
+                <div class="call">
+                    <h1>CALL US</h1>
+                    <hr>
+                    <br>
+                    <p>+91 98765 *****</p>
+                </div>
+             
+                
+            </div>
+            <div class="newsletter">
+                <h3>NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="Your Email Address">
+                    <br>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+            <div class="head">
+                <h3>CONTACT</h3>
+                <p>123,XYZ Road,BSK 3 <br>Coimbatore,Tamilnadu,IN</p>
+                <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="email">
+                    <h1>EMAIL US</h1>
+                    <hr>
+                    <br>
+                    <p>safaradventures@yahoo.com</p>
+                </div>
+            </div> 
+        </div>
+    
+    
+    </body>
+
+</html>
+
+

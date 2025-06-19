@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Tips for Travelers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 110px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        max-height: fit-content;
+        padding-bottom: 50px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #000;
+    }
+
+    ol,
+    ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    ol li,
+    ul li {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #000;
+    }
+
+    img {
+        max-width: 700px;
+        height: 500px;
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        transition: all 0.2s ease;
+
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+        background-color: white;
+        font-size: 62.5%;
+
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+        box-shadow: 1px 1px 2px rgb(15, 15, 68);
+        transition: top 0.3s;
+    }
+
+    .content {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 1.6rem 1rem;
+    }
+
+    .nav-bar .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .nav-bar .navigation {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+    }
+
+    .nav-bar .navigation .link a {
+        padding: 0.25rem;
+        font-weight: 800;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #123d72;
+        border-top: 1px solid transparent;
+        transition: all 0.6s;
+        margin-left: 35%;
+    }
+
+    .nav-bar .navigation .link:hover a {
+        color: rgb(139, 65, 45);
+        border-top: 1px solid transparent;
+    }
+
+    .nav-bar .site-logo .logo-link {
+        padding: 0.5rem;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #123d72;
+        border-top: 1px solid transparent;
+    }
+
+    .nav-bar .site-logo {
+        padding: 0.5rem;
+    }
+
+    .site-banner {
+        background-color: #000;
+        padding: 4rem 0rem;
+        margin-top: 5%;
+
+    }
+
+    .site-banner .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .site-banner .row p {
+        font-weight: 800;
+        background-image: url(bgw1\ \(2\).jpeg);
+        background-position: top center;
+        background-attachment: fixed;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: #020b11;
+        -webkit-text-fill-color: transparent;
+        font-size: 150px;
+    }
+
+    .bottom {
+        width: 100%;
+        padding: 10px 15%;
+        background-color: #000;
+        margin-top: 0px;
+        color: aliceblue;
+        display: flex;
+        font-size: 16px;
+    }
+
+    .bottom div {
+        text-align: center;
+    }
+
+    .newsletter {
+        flex-grow: 2;
+    }
+
+    .bottom h3 {
+        font-weight: 300;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+
+    .col-1 a {
+        display: block;
+        text-decoration: none;
+        margin-bottom: 10px;
+        color: aliceblue;
+        font-size: 16px;
+    }
+
+    .email {
+        padding-top: 40%;
+    }
+
+    .call {
+        padding-top: 115px;
+    }
+
+    .email h1,
+    .call h1 {
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    .email p,
+    .call p {
+        cursor: pointer;
+    }
+
+    form input {
+        width: 400px;
+        height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        outline: none;
+        border: none;
+    }
+
+    form button {
+        background: transparent;
+        border: 2px solid aliceblue;
+        color: aliceblue;
+        border-radius: 30px;
+        padding: 10px 30px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .social {
+        margin-top: 30px;
+    }
+
+    .social i {
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+</style>
+
+
+<body>
+    <nav class="nav-bar">
+        <div class="content">
+            <div class="site-logo">
+                <a href="history.html" class="logo-link">SAFAR</a>
+            </div>
+            <ul class="navigation">
+                <li class="link"><a href="home_safar.html">HOME</a></li>
+                <li class="link"><a href="packages_safar.html">PACKAGES</a></li>
+                <li class="link"><a href="about us_safar.html">ABOUT</a></li>
+                <li class="link"><a href="gallery_safar.html">GALLERY</a></li>
+                <li class="link"><a href="blogs_safar.html">BLOG</a></li>
+                <li class="link"><a href="contact.html">CONTACT</a></li>
+                <li class="link"><a href="offers_safar.html">OFFERS</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 style="margin-left: 2%;">Wellness Tips for Travelers</h1>
+        <img src="t.png" alt="Tips" style="width: 100%; height:400px; margin-left: 7%;">
+        <p>Traveling can be exhilarating, but it can also be taxing on your body and mind.
+            To ensure you feel your best throughout your adventures, here are some wellness tips tailored for travelers:
+
+        </p>
+        <ul>
+            <li><strong> Stay Hydrated
+                </strong>
+                Proper hydration is essential when traveling. Carry a reusable water bottle and drink plenty of water,
+                especially in dry or hot climates. Dehydration can lead to fatigue and headaches, so make it a habit to
+                sip water regularly.
+
+            </li>
+            <li><strong>Prioritize Sleep
+                </strong>Quality sleep is crucial for overall well-being. Try to maintain a regular sleep schedule
+                despite time zone changes.
+                Use earplugs, an eye mask, or white noise apps to help you sleep better, especially in noisy
+                environments.
+            </li>
+            <li><strong> Practice Mindful Eating
+                </strong>Enjoy the local cuisine mindfully. Savor each bite, and opt for fresh, local produce and
+                dishes.
+                Balance indulgent meals with lighter options to avoid feeling sluggish.
+            </li>
+            <li><strong> Protect Your Skin</strong>Shield your skin from sun damage by wearing sunscreen, sunglasses,
+                and a wide-brimmed hat.
+                Keep your skin moisturized, especially in dry climates or during air travel.
+            </li>
+            <img src="tipjpeg" alt="Honeymoon destinations" style="width: 60%; margin-left: 15%;">
+            <li><strong>Stay Connected with Loved Ones</strong> Maintain emotional well-being by staying connected with
+                family and friends.
+                Share your travel experiences and seek support if you feel homesick or overwhelmed.
+            </li>
+            <li><strong>Embrace Restorative Activities
+                </strong> Schedule downtime for restorative activities like reading, journaling, or enjoying a leisurely
+                cup of tea.
+                Give yourself permission to unwind and recharge.
+            </li>
+            <li><strong>Be Mindful of Your Limits
+                </strong> Listen to your body and honor your limits. Pace yourself and avoid overexertion.
+                Don't hesitate to take breaks or modify your plans if you feel unwell.
+            </li>
+        </ul>
+        <p>Traveling is an opportunity to explore new destinations and cultures while nurturing your well-being.
+            By incorporating these wellness tips into your travel routine, you can stay healthy, energized, and balanced
+            throughout your journeys. Prioritize self-care, stay mindful of your needs, and make the most of every
+            moment on the road. Here's to happy and healthy travels!
+            </b>
+        </p>
+    </div>
+    <div class="site-banner">
+        <div class="content">
+            <div class="row">
+                <p>Safar</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="about us_safar.html">About</a>
+            <a href="jobtravel.html">Jobs</a>
+            <a href="test.html">Reviews</a>
+            <div class="call">
+                <h1 style="color: #ffffff;">CALL US</h1>
+                <hr>
+                <br>
+                <p style="color: #ffffff;">+91 98765 *****</p>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address">
+                <br>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+        <div class="head">
+            <h3>CONTACT</h3>
+            <p style="color: #ffffff;">123,XYZ Road,BSK 3 <br>Coimbatore,Tamilnadu,IN</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="email">
+                <h1 style="color: #ffffff;">EMAIL US</h1>
+                <hr>
+                <br>
+                <p style="color: #ffffff;">safaradventures@yahoo.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

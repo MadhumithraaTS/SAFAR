@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucketlist Destinations in India</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 110px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        max-height: fit-content;
+        padding-bottom: 50px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #000;
+    }
+
+    ol,
+    ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    ol li,
+    ul li {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #000;
+    }
+
+    img {
+        max-width: 700px;
+        height: 500px;
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        transition: all 0.2s ease;
+        font-family: "Poppins", sans-serif;
+
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+        background-color: white;
+        font-size: 62.5%;
+
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+        box-shadow: 1px 1px 2px rgb(15, 15, 68);
+        transition: top 0.3s;
+    }
+
+    .content {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 1.6rem 1rem;
+    }
+
+    .nav-bar .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .nav-bar .navigation {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+    }
+
+    .nav-bar .navigation .link a {
+        padding: 0.25rem;
+        font-weight: 800;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #123d72;
+        border-top: 1px solid transparent;
+        transition: all 0.6s;
+        margin-left: 35%;
+    }
+
+    .nav-bar .navigation .link:hover a {
+        color: rgb(139, 65, 45);
+        border-top: 1px solid transparent;
+    }
+
+    .nav-bar .site-logo .logo-link {
+        padding: 0.5rem;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #123d72;
+        border-top: 1px solid transparent;
+    }
+
+    .nav-bar .site-logo {
+        padding: 0.5rem;
+    }
+
+    .site-banner {
+        background-color: #000;
+        padding: 4rem 0rem;
+        margin-top: 5%;
+
+    }
+
+    .site-banner .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .site-banner .row p {
+        font-weight: 800;
+        background-image: url(bgw1\ \(2\).jpeg);
+        background-position: top center;
+        background-attachment: fixed;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: #020b11;
+        -webkit-text-fill-color: transparent;
+        font-size: 150px;
+    }
+
+    .bottom {
+        width: 100%;
+        padding: 10px 15%;
+        background-color: #000;
+        margin-top: 0px;
+        color: aliceblue;
+        display: flex;
+        font-size: 16px;
+    }
+
+    .bottom div {
+        text-align: center;
+    }
+
+    .newsletter {
+        flex-grow: 2;
+    }
+
+    .bottom h3 {
+        font-weight: 300;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+
+    .col-1 a {
+        display: block;
+        text-decoration: none;
+        margin-bottom: 10px;
+        color: aliceblue;
+        font-size: 16px;
+    }
+
+    .email {
+        padding-top: 40%;
+    }
+
+    .call {
+        padding-top: 115px;
+    }
+
+    .email h1,
+    .call h1 {
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    .email p,
+    .call p {
+        cursor: pointer;
+    }
+
+    form input {
+        width: 400px;
+        height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        outline: none;
+        border: none;
+    }
+
+    form button {
+        background: transparent;
+        border: 2px solid aliceblue;
+        color: aliceblue;
+        border-radius: 30px;
+        padding: 10px 30px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .social {
+        margin-top: 30px;
+    }
+
+    .social i {
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+</style>
+
+
+<body>
+    <nav class="nav-bar">
+        <div class="content">
+            <div class="site-logo">
+                <a href="history.html" class="logo-link">SAFAR</a>
+            </div>
+            <ul class="navigation">
+                <li class="link"><a href="home_safar.html">HOME</a></li>
+                <li class="link"><a href="packages_safar.html">PACKAGES</a></li>
+                <li class="link"><a href="about us_safar.html">ABOUT</a></li>
+                <li class="link"><a href="gallery_safar.html">GALLERY</a></li>
+                <li class="link"><a href="blogs_safar.html">BLOG</a></li>
+                <li class="link"><a href="contact.html">CONTACT</a></li>
+                <li class="link"><a href="offers_safar.html">OFFERS</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 style="margin-left: 2%;">Must-Visit Places for Every Traveler
+        </h1>
+        <img src="70 Best Honeymoon Destinations In 2019 Wedding Forward.jpeg" alt="Honeymoon" style="width: 100%; height:400px; margin-left: 7%;">
+        <p>India, with its diverse landscapes, rich culture, and historical treasures, 
+            offers a plethora of bucket list-worthy destinations that will leave you in awe. 
+            Whether you're a nature enthusiast, history buff, or food lover, here are some top destinations in India that deserve a spot 
+            on your travel bucket list:
+        </p>
+        <ul>
+            <li><strong>Taj Mahal, Agra</strong>No visit to India is complete without seeing the iconic Taj Mahal.
+                Marvel at this UNESCO World Heritage Site, a masterpiece of Mughal architecture, and witness the timeless beauty of the white marble mausoleum.
+            </li>
+            <li><strong>Varanasi, Uttar Pradesh</strong>Experience the spiritual essence of India in Varanasi, one of the oldest cities in the world. 
+                Explore the ghats along the Ganges River, witness mesmerizing Ganga Aarti ceremonies, and immerse yourself in the rich culture and traditions.
+
+            </li>
+            <li><strong> Kerala Backwaters</strong>Cruise through the tranquil backwaters of Kerala on a traditional houseboat. 
+                Experience the serenity of lush green landscapes, coconut groves, and village life along the waterways.
+            </li>
+            <li><strong> Mysore,Karnataka</strong> Experience the grandeur of Mysore, known for its magnificent Mysore Palace. 
+                Witness the vibrant Dussehra celebrations, explore Chamundi Hill, and indulge in Mysore's famous silk sarees and sweets.
+
+            </li>
+            <img src="North East India Bucket List (2024) - 34 Amazing Things to Do in North East India!.jpeg" alt="Honeymoon destinations"
+                style="width: 60%; margin-left: 15%;">
+            <li><strong>Kolkata, West Bengal</strong> Immerse yourself in the cultural capital of India, Kolkata. 
+                Visit the Victoria Memorial, explore historic neighborhoods like Kumartuli and Park Street, and savor delectable Bengali cuisine.
+            </li>
+            <li><strong>Hampi, Karnataka
+            </strong> Explore the surreal ruins of Hampi, a UNESCO World Heritage Site. 
+            Marvel at ancient temples, majestic boulders, and captivating landscapes that transport you back in time.
+        </li>
+            <li><strong>Jaisalmer, Rajasthan</strong> Experience the golden hues of Jaisalmer, known for its majestic sandstone forts and desert landscapes. 
+                Take a camel safari in the Thar Desert and camp under the stars in luxury tents.
+            </li>
+            <li><strong>Leh-Ladakh, Jammu and Kashmir</strong> Embark on an adventure in the breathtaking landscapes of Leh-Ladakh. 
+                Drive through mountain passes, visit ancient monasteries, and admire the serene beauty of Pangong Lake and Nubra Valley.
+            </li>
+        </ul>
+        <p>India is a traveler's paradise with a wealth of experiences waiting to be explored. Whether you're seeking ancient monuments, natural beauty, or cultural immersion, these bucket list destinations offer unforgettable adventures and memories.
+            <b>Plan your journey to these iconic places in India and embark on an extraordinary exploration of Incredible India!</b>
+        </p>
+    </div>
+    <div class="site-banner">
+        <div class="content">
+            <div class="row">
+                <p>Safar</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="about us_safar.html">About</a>
+            <a href="jobtravel.html">Jobs</a>
+            <a href="test.html">Reviews</a>
+            <div class="call">
+                <h1 style="color: #ffffff;">CALL US</h1>
+                <hr>
+                <br>
+                <p style="color: #ffffff;">+91 98765 *****</p>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address">
+                <br>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+        <div class="head">
+            <h3>CONTACT</h3>
+            <p style="color: #ffffff;">123,XYZ Road,BSK 3 <br>Coimbatore,Tamilnadu,IN</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="email">
+                <h1 style="color: #ffffff;">EMAIL US</h1>
+                <hr>
+                <br>
+                <p style="color: #ffffff;">safaradventures@yahoo.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

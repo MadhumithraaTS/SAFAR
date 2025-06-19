@@ -1,0 +1,310 @@
+<html>
+    <head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link href="contact.css" rel="stylesheet"></link>
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #123d72;
+    opacity:url(co.webp) 0.6;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+
+}
+.icons i{
+   color: black;
+   font-size: 30px;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactinfo{
+     width:50%;
+     display: flex;
+     flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactinfo .box .text{
+   display: flex;
+   margin-left: 20px;
+   font-size: 16px ;
+   color: #fff;
+   flex-direction: column;
+   font-weight: 300;
+
+}
+.container .contactinfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactform{
+    width:40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactform h2{
+    font-size: 30px;
+    color:#333;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width:100% ;
+    margin-top: 10px;
+}
+.contactform .inputbox input,.contactform .inputbox textarea{
+    width:100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color:#666;   
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    color: #e91e36;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: rgb(139, 65, 45);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.2s ease;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    background-color: white;
+    font-size: 62.5%;
+
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Roboto", sans-serif;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 1px 1px 2px rgb(15, 15, 68);
+    transition: top 0.3s;
+}
+
+.content {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1.6rem 1rem;
+}
+
+.nav-bar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-bar .navigation {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.nav-bar .navigation .link a {
+    padding: 0.25rem;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #123d72;
+    border-top: 1px solid transparent;
+    transition: all 0.6s;
+    margin-left: 35%;
+}
+
+.nav-bar .navigation .link:hover a {
+    color: rgb(139, 65, 45);
+    border-top: 1px solid transparent;
+}
+
+.nav-bar .site-logo .logo-link {
+    padding: 0.5rem;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #123d72;
+    border-top: 1px solid transparent;
+}
+
+.nav-bar .site-logo {
+    padding: 0.5rem;
+}
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .container .contactinfo{
+        width: 100%;
+    }
+}
+
+    </style>
+    <body>
+        <nav class="nav-bar">
+            <div class="content">
+                <div class="site-logo">
+                    <a href="history.html" class="logo-link">SAFAR</a>
+                </div>
+                <ul class="navigation">
+                    <li class="link"><a href="home_safar.html">HOME</a></li>
+                    <li class="link"><a href="packages_safar.html">PACKAGES</a></li>
+                    <li class="link"><a href="about us_safar.html">ABOUT</a></li>
+                    <li class="link"><a href="gallery_safar.html">GALLERY</a></li>
+                    <li class="link"><a href="blogs_safar.html">BLOG</a></li>
+                    <li class="link"><a href="contact.html">CONTACT</a></li>
+                    <li class="link"><a href="offers_safar.html">OFFERS</a></li>
+                </ul>
+            </div>
+        </nav>
+         <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p style="font-size: 18;">We're here to help! Whether you have questions, feedback, or need assistance, our dedicated team is ready to support you. </p>
+            </div>
+            <div class="container">
+                <div class="contactinfo">
+                    <div class="box">
+                        <div class="icon"><i class='bx bx-map'></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>123,XYZ Road,BSK 3<br>Coimbatore,Tamilnadu</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class='bx bxs-phone' ></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>98765 *****</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class='bx bx-envelope'></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>safaradventures@yahoo.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactform">
+                    <form>
+                        <h2>Send Us Your Message</h2>
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputbox">
+                            <textarea required="required"></textarea>
+                            <span>Type your Message</span>
+                        </div>
+                        <div class="inputbox">
+                           <input type="submit" name="Submit" value="Send">
+                        </div>
+                    </form>
+                    <div class="icons" >
+                        <a href="https://www.instagram.com/"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle' ></i></a>
+                        <a href="https://www.twitter.com/"><i class='bx bxl-twitter' ></i></a>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </body>
+</html>

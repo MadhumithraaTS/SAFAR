@@ -1,0 +1,419 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content=""width=device width,initial-scale="1.0">
+        <title>Special Offers</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="style_offers.css">
+         
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('your-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bgw1\ \(2\).jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+.nav-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    width:100%;
+    z-index: 1000;
+    background-color:white;
+    box-shadow: 1px 1px 2px rgb(15, 15, 68);
+    transition: top 0.3s;
+}
+.content{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1.6rem 1rem;
+}
+.nav-bar .content{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap:2rem;
+}
+.nav-bar .navigation{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+.nav-bar .navigation .link a{
+    padding: 0.25rem;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #123d72;
+    border-top: 1px solid transparent;
+    transition: all 0.6s;
+}
+.nav-bar .navigation .link:hover a{
+    color: rgb(139, 65, 45);
+    border-top: 1px solid transparent;
+}
+.nav-bar .site-logo .logo-link{
+    padding: 0.5rem;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #123d72;
+    border-top: 1px solid transparent;
+}
+.nav-bar .site-logo{
+    padding: 0.5rem;
+}
+
+.body {
+    margin-top: 10%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.heading {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+    background: linear-gradient(to right, rgba(255, 110, 127, 0.7), rgba(191, 233, 255, 0.7));
+}
+
+
+
+.heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.heading p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.heading a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 12px 30px;
+    background-color: #4facfe;
+    transition: all 0.3s ease;
+}
+
+.heading a:hover {
+    background-color: #00f2fe;
+}
+
+
+.tours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.places {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.places:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.places h3 {
+    position: relative;
+    top: -2%;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.places p {
+    position: relative;
+    top: -10px;
+    font-size: 1.1rem;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.places img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.places a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #4facfe;
+    transition: all 0.3s ease;
+}
+
+.places a:hover {
+    background-color: #00f2fe;
+}
+.site-banner{
+    background-color: #000;
+    padding: 4rem 0rem;
+    margin-top: 5%;
+
+}
+.site-banner .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.site-banner .row p{
+    font-weight: 800;
+    background-image: url(bgw1\ \(2\).jpeg);
+    background-position: top center;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: #020b11;
+    -webkit-text-fill-color: transparent;
+    font-size: 150px;
+}
+.bottom {
+    width: 100%;
+    padding: 10px 15%;
+    background-color: #000;
+    margin-top: 0px;
+    color: aliceblue;
+    display: flex;
+}
+.bottom div {
+    text-align: center;
+}
+.newsletter {
+    flex-grow: 2;
+}
+ .bottom h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+ }
+
+ .col-1 a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: aliceblue;
+ }
+.email{
+    padding-top: 40%;
+}
+.call{
+    padding-top: 115px;
+}
+.email h1,
+.call h1{
+    
+    font-weight: 300;
+    font-size:larger;
+}
+.email p,
+.call p{
+    cursor: pointer;
+}
+ form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+ }
+ form button {
+    background: transparent;
+    border: 2px solid aliceblue;
+    color: aliceblue;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+ }
+.social {
+    margin-top: 30px;
+}
+.social i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+    </style>
+    <body>
+        <nav class="nav-bar">
+            <div class="content">
+                <div class="site-logo">
+                    <a href="history.html" class="logo-link">SAFAR</a>
+                </div>
+                <ul class="navigation">
+                    <li class="link"><a href="home_safar.html">HOME</a></li>
+                    <li class="link"><a href="packages_safar.html">PACKAGES</a></li>
+                    <li class="link"><a href="about us_safar.html">ABOUT</a></li>
+                    <li class="link"><a href="gallery_safar.html">GALLERY</a></li>
+                    <li class="link"><a href="blogs_safar.html">BLOG</a></li>
+                    <li class="link"><a href="contact.html">CONTACT</a></li>
+                    <li class="link"><a href="#">OFFERS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="body">
+            <div class="heading">
+                <h1>Travel With Us</h1>
+                <p>One's destination is never a place</p>
+                <p>but a new way of seeing things!</p>
+                <br>
+                <a href="#" id="learn-more-btn">Learn more</a>
+            </div>
+            <div class ="tours">
+                <div class="places">
+                    <h3>Summers</h3>
+                    <p>Explore our exciting summer vacation packages!</p>
+                    <img src="sum.jpeg" style="width: 200px; height: 150px; border-radius:12px;">
+                    <br>
+                    <br>
+                    <a href="goa.html">Book now 15% OFF</a>
+                </div>
+                <div class="places">
+                    <h3>Winters</h3>
+                    <p>Escape to snowy destinations with our winter deals!</p>
+                    <img src="win.jpeg" style="width: 200px; height: 150px; border-radius:12px;">
+                    <br>
+                    <br>
+                    <a href="leh-ladakh expedition.html">Book now 15% OFF</a>
+                </div>
+                <br>
+                <div class="places">
+                    <h3>Honeymoon</h3>
+                    <p>Plan your romantic getaway with our honeymoon packages!</p>
+                    <img src="h.jpeg" style="width: 200px; height: 150px; border-radius:12px;">
+                    <br>
+                    <br>
+                    <a href="andaman.html">Book now 20% OFF</a>
+                </div>
+                <div class="places">
+                    <h3> Wedding</h3>
+                    <p>Say YES in a dreamy location with our wedding discounts!</p>
+                    <img src="dw.jpg" style="width: 200px; height: 150px; border-radius:12px;">
+                    <br>
+                    <br>
+                    <a href="jaipur.html">Book now 25% OFF</a>
+                </div>
+                <div class="places">
+                    <h3>IV trips</h3>
+                    <p>Discover educational tours with our industrial visit trip offers!</p>
+                    <img src="iv.jpg" style="width: 200px; height: 150px; border-radius:12px;">
+                    <br>
+                    <br>
+                    <a href="jaipur.html">Book now 20% OFF</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="site-banner">
+            <div class="content">
+                <div class="row">
+                    <p>Safar</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="col-1">
+                <h3>Useful Links</h3>
+                <a href="about us_safar.html">About</a>
+                <a href="jobtravel.html">Jobs</a>
+                <a href="test.html">Reviews</a>
+                <div class="call">
+                    <h1>CALL US</h1>
+                    <hr>
+                    <br>
+                    <p>+91 98765 *****</p>
+                </div>
+             
+                
+            </div>
+            <div class="newsletter">
+                <h3>NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="Your Email Address">
+                    <br>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+            <div class="head">
+                <h3>CONTACT</h3>
+                <p>123,XYZ Road,BSK 3 <br>Coimbatore,Tamilnadu,IN</p>
+                <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="email">
+                    <h1>EMAIL US</h1>
+                    <hr>
+                    <br>
+                    <p>safaradventures@yahoo.com</p>
+                </div>
+            </div> 
+        </div>
+    <script>
+        document.getElementById("learn-more-btn").onclick = function () {
+            alert("Thank you for your interest! Explore our packages to discover amazing deals.");
+            window.location.href = "packages_safar.html";
+        };
+    </script>
+    
+    </body>
+
+
+</html>

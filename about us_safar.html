@@ -1,0 +1,476 @@
+<html>
+
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="style_about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+        background-color: white;
+
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: white;
+        box-shadow: 1px 1px 2px rgb(15, 15, 68);
+        transition: all 0.3s;
+    }
+
+    .content {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 1.6rem 1rem;
+    }
+
+    .nav-bar .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .nav-bar .navigation {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+    }
+
+    .nav-bar .navigation .link a {
+        padding: 0.25rem;
+        font-weight: 800;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #123d72;
+        border-top: 1px solid transparent;
+        transition: all 0.6s;
+    }
+
+    .nav-bar .navigation .link:hover a {
+        color: rgb(139, 65, 45);
+        border-top: 1px solid transparent;
+    }
+
+    .nav-bar .site-logo .logo-link {
+        padding: 0.5rem;
+        font-weight: 800;
+        font-size: 39px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #123d72;
+        border-top: 1px solid transparent;
+    }
+
+    .nav-bar .site-logo {
+        padding: 0.5rem;
+    }
+
+    .intro {
+        margin-left: 60%;
+        nav-up: 60%;
+        position: relative;
+        top: -500px;
+        left: -60px;
+        bottom: -20px;
+    }
+
+    .intro h1 {
+        padding-top: 20px;
+        font-family: "Italianno", cursive;
+        padding-left: 10px;
+        font-size: 50px;
+        color: #123d72;
+        font-weight: 500;
+    }
+
+    .intro h3 {
+        padding-bottom: 15px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .intro p {
+        line-height: 40px;
+        justify-content: center;
+        font-size: large;
+        font-family: 'Prompt', sans-serif;
+    }
+
+    .vision {
+        top: -300px;
+        position: relative;
+        margin-left: 8%;
+    }
+
+    .vision h1 {
+        font-family: "Italianno", cursive;
+        font-size: 50px;
+        color: #123d72;
+        font-weight: 500;
+        padding-left: 10px;
+    }
+
+    .vision h3 {
+        padding-bottom: 15px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .vision p {
+        line-height: 40px;
+        justify-content: center;
+        font-size: large;
+        font-family: 'Prompt', sans-serif;
+        margin-right: 20%;
+    }
+
+    .mission {
+        top: -300px;
+        position: relative;
+        margin-left: 8%;
+    }
+
+    .mission h3 {
+        padding-bottom: 15px;
+        padding-top: 70px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .mission p {
+        line-height: 40px;
+        justify-content: center;
+        font-size: large;
+        font-family: 'Prompt', sans-serif;
+        margin-right: 20%;
+
+    }
+
+    .team {
+        top: -200px;
+        position: relative;
+        margin-left: 8%;
+
+    }
+
+    .team h1 {
+        font-family: "Italianno", cursive;
+        font-size: 50px;
+        color: #123d72;
+        font-weight: 500;
+        padding-left: 10px;
+        margin-left: 36%;
+        padding-top: 70px;
+    }
+
+    .team h3 {
+        padding-bottom: 15px;
+        font-size: 50px;
+        font-weight: bold;
+        margin-left: 35%;
+    }
+
+    img {
+        height: 40%;
+        width: 20%;
+        position: relative;
+        margin-left: 20%;
+        top: -110px;
+        padding-bottom: 100px;
+    }
+
+    .caption {
+        height: 2%;
+    }
+
+    .one h3 {
+        position: relative;
+        top: -490px;
+        margin-left: 23%;
+    }
+
+    .two h3 {
+        position: relative;
+        top: -530px;
+        margin-left: 63%;
+    }
+
+    .three h3 {
+        position: relative;
+        top: -280px;
+        margin-left: 23%;
+    }
+
+    .four h3 {
+        position: relative;
+        top: -325px;
+        margin-left: 62%;
+
+    }
+
+    .about img {
+        height: 100%;
+        width: 40%;
+        margin-left: 8%;
+        padding-top: 140px;
+        top: 10px;
+    }
+
+    .site-banner {
+        background-color: #000;
+        padding: 4rem 0rem;
+        margin-top: 5%;
+
+    }
+
+    .site-banner .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .site-banner .row p {
+        font-weight: 800;
+        background-image: url(bgw1\ \(2\).jpeg);
+        background-position: top center;
+        background-attachment: fixed;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: #020b11;
+        -webkit-text-fill-color: transparent;
+        font-size: 150px;
+    }
+
+    .bottom {
+        width: 100%;
+        height: 50%;
+        padding: 5px 15%;
+        background-color: #000;
+        margin-top: 0px;
+        color: aliceblue;
+        display: flex;
+        font-size: 16px;
+    }
+
+    .bottom div {
+        text-align: center;
+    }
+
+    .newsletter {
+        flex-grow: 2;
+    }
+
+    .bottom h3 {
+        font-weight: 300;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+
+    .col-1 a {
+        display: block;
+        text-decoration: none;
+        margin-bottom: 10px;
+        color: aliceblue;
+    }
+
+    .email {
+        padding-top: 40%;
+    }
+
+    .call {
+        padding-top: 115px;
+    }
+
+    .email h1,
+    .call h1 {
+        font-weight: 300;
+        font-size: larger;
+    }
+
+    .email p,
+    .call p {
+        cursor: pointer;
+    }
+
+    form input {
+        width: 400px;
+        height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        outline: none;
+        border: none;
+    }
+
+    form button {
+        background: transparent;
+        border: 2px solid aliceblue;
+        color: aliceblue;
+        border-radius: 30px;
+        padding: 10px 30px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .social {
+        margin-top: 30px;
+    }
+
+    .social i {
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+
+    }
+</style>
+
+<body>
+    <nav class="nav-bar">
+        <div class="content">
+            <div class="site-logo">
+                <a href="history.html" class="logo-link">SAFAR</a>
+            </div>
+            <ul class="navigation">
+                <li class="link"><a href="home_safar.html">HOME</a></li>
+                <li class="link"><a href="packages_safar.html">PACKAGES</a></li>
+                <li class="link"><a href="#">ABOUT</a></li>
+                <li class="link"><a href="gallery_safar.html">GALLERY</a></li>
+                <li class="link"><a href="blogs_safar.html">BLOG</a></li>
+                <li class="link"><a href="contact.html">CONTACT</a></li>
+                <li class="link"><a href="offers_safar.html">OFFERS</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="about">
+        <img src="about.jpeg">
+        <div class="intro">
+            <h1>Learn About Us</h1>
+            <h3>Who We Are</h3>
+            <p>
+                Established in 2015, Safar Adventures was founded by avid travelers who wanted to share their passion
+                for exploration with fellow adventurers.
+                What began as a personal quest for discovery has evolved into a full-fledged travel agency dedicated to
+                delivering exceptional experiences.
+            </p>
+        </div>
+        <div class="vision">
+            <h1>Our Vision and Mission</h1>
+            <h3>Vision</h3>
+            <p>Our vision at Safar is to ignite a sense of wonder and discovery through immersive journeys that showcase
+                the rich cultural tapestry, diverse landscapes, and hidden treasures of India.
+                We aspire to redefine domestic travel by curating authentic and sustainable experiences that deepen
+                connections with local communities and celebrate India's heritage.
+                Our goal is to inspire travelers to explore the soul of India, fostering a deeper appreciation for our
+                country's beauty and diversity
+            </p>
+        </div>
+        <div class="mission">
+            <h3>Mission</h3>
+            <p>
+                At Safar, our mission is to inspire wanderlust and create meaningful connections through personalized
+                travel experiences.
+                We believe in responsible tourism, sustainability, and fostering cultural appreciation.
+            </p>
+        </div>
+        <div class="team">
+            <h1>Our Professionals</h1>
+            <h3>Meet the Team</h3>
+
+        </div>
+    </div>
+    <img src="jpeg">
+    <img src="jpeg">
+    <img src="jpeg">
+    <img src="jpeg">
+    <div class="caption">
+        <div class="one">
+            <h3>Finance and Accounting<br>Mayuka Sri K</h3>
+        </div>
+        <div class="two">
+            <h3>Technology Specialist<br>Reenu Gowda</h3>
+        </div>
+        <div class="three">
+            <h3>Management<br>Madhumithraa T S</h3>
+        </div>
+        <div class="four">
+            <h3>Customer Service Representative<br>Vrithika K M</h3>
+        </div>
+    </div>
+    <div class="site-banner">
+        <div class="content">
+            <div class="row">
+                <p>Safar</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="#">About</a>
+            <a href="jobtravel.html">Jobs</a>
+            <a href="test.html">Reviews</a>
+            <div class="call">
+                <h1>CALL US</h1>
+                <hr>
+                <br>
+                <p>+91 98765 *****</p>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address">
+                <br>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+        <div class="head">
+            <h3>CONTACT</h3>
+            <p>123,XYZ Road,BSK 3 <br>Coimbatore,Tamilnadu,IN</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="email">
+                <h1>EMAIL US</h1>
+                <hr>
+                <br>
+                <p>safaradventures@yahoo.com</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
